@@ -362,7 +362,7 @@ MigrationBackup/
 FodyWeavers.xsd
 
 # Click-Once directory
-#!bin/
-#!publish/
-#!bin/publish/
+!TourneyMaster/
+!TourneyMaster/bin/
+!TourneyMaster/bin/publish/
 !TourneyMaster/bin/publish/**
