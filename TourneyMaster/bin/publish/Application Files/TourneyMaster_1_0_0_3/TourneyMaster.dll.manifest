@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="TourneyMaster.exe" version="1.0.0.3" publicKeyToken="ca2f6d564c417b51" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Launcher" version="5.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Launcher.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Launcher.exe" size="15712">
+      <assemblyIdentity name="Launcher" version="5.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>n0h/1KhFUpNoU4K3CTna/0BsF8bqxeWd5VFf1DGthUQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="TourneyMaster.deps.json" size="484">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>4qdrBQKOhv0qGJM4H0daV/6wUdnkDcgYEgY5Ntkq78M=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="TourneyMaster.dll" size="7008">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>3eI3lVgJ4/ZNJizy4P2+2woiC2V0qkS+sh5Rmyeudao=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="TourneyMaster.exe" size="128352">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>UsnV8AO+AdGOG76NPT95r4KJn37untThpl9vC6rx5Nc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="TourneyMaster.runtimeconfig.json" size="154">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>NiDVPch7SqLL1QtcqAuqPjoBfZ04y3L2kORCla/DP3c=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=Jason Yocum" issuerKeyHash="30a62a615f8c9e1433797b6fa9eaeb806787e584" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>wGKtNW0qHUIjnamDkHdnjNhKvEs5P8wYIR4A7xN7IyM=</DigestValue></Reference></SignedInfo><SignatureValue>cautjXwp2c3SWfXtS56ATqxXgfR3DeyuMCvH0WEIgWu7XcIDUqBohUYAaiPcknoTvHOBHCCrVtvE9m3ufTZtRPyhOl34d9EwsN/udyvG9PJYI4sIrrGpMn8qLKRNYXYioFMNlil98DwsCzTRfZZ0vBMTdrz0tpNr7Ed2SMqf2nnOZc6tfD5QnhgmccLvPJ4JOYjr1wAGnD27VJCp2gy4X2LB1FboRkD4V0FmslecYoigPBkFyLDKXxRBNpZ68odaZPxGW+TKPWI1OOUrnC710ZTU3xkbG81zIvByZEgiRbkLXOhemjwZz0i8oq3Rk/pXsWC4hpqh+U4CoyGiwnXR9g==</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>rv+D+7G29A/HX3hxxl8DHpYX2wSThxnS1nAI2RTw8rbHLJuJp6Kr/JeZMyFdtGeCUTB80MxMDfBGlaSCaj+ncFXqcrdaZmkOTwCJDq5XAfH311OYF3XXUurYwysOKcpZYsOcK9TFvcNPGPh/BkAcq2uRzCRgWjsSbJs3bYPYxVaK6sGL4SjPFJTktsFB98L4FCjOjiwMkxFWvM0Ycu348Pb1i6FzRWqSqDi2E/wC1UtR6j24TmHmDeEtpFU03H+Y+EQDd6DGG8T1aPB2AvEF0pfpcE7PJn9wxqcIY92MhIwxazu+gYB3zuPeSWlH2hP99/6VJWvfZm9+KcPGrtGZSQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="23237b13ef001e2118cc3f394bbc4ad88c67779083a99d23421d2a6d35ad62c0" Description="" Url=""><as:assemblyIdentity name="TourneyMaster.exe" version="1.0.0.3" publicKeyToken="ca2f6d564c417b51" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Jason Yocum</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>fv7+MBwROXnWnjEUFJosR+W/x7uJgAqDDwKb+miPq6M=</DigestValue></Reference></SignedInfo><SignatureValue>CSrfbaZg6mfTKpvRYZ8FfHl+uNyiTJWoOCTJirfQOtsztQZW4VS81lejDk5TF1VkD9k01vUnIr8qEKSC18swGojiIeNKO6j9BlQwhev8MhW5a13pHNvJ2963Aal65hGOUnXLMCw+nMWIMGDhyV6oxy5ZsCYVPHmPbncBFGfLPOoHC98SXnnwDbUYFDlZNr8UgKLzYzKC5MxMp1devSs9Q8BP8AFeZnv9YFMGjcTDwaX1lJVjBUDsR9gfe9zraD/q16+3HY7a0lHeV8s0U8ykikqgfh27+2hyIXcjES7idLGeDaOn6Ys9SG2YEQXh6s/g4cLvmm7WuFuqY9TzKnpLHw==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>rv+D+7G29A/HX3hxxl8DHpYX2wSThxnS1nAI2RTw8rbHLJuJp6Kr/JeZMyFdtGeCUTB80MxMDfBGlaSCaj+ncFXqcrdaZmkOTwCJDq5XAfH311OYF3XXUurYwysOKcpZYsOcK9TFvcNPGPh/BkAcq2uRzCRgWjsSbJs3bYPYxVaK6sGL4SjPFJTktsFB98L4FCjOjiwMkxFWvM0Ycu348Pb1i6FzRWqSqDi2E/wC1UtR6j24TmHmDeEtpFU03H+Y+EQDd6DGG8T1aPB2AvEF0pfpcE7PJn9wxqcIY92MhIwxazu+gYB3zuPeSWlH2hP99/6VJWvfZm9+KcPGrtGZSQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIC6jCCAdKgAwIBAgIQeSIBurm/wKNG7dHnfNUi8jANBgkqhkiG9w0BAQsFADAWMRQwEgYDVQQDEwtKYXNvbiBZb2N1bTAeFw0yMTA0MjIyMzQzMThaFw0yMjA0MjMwNTQzMThaMBYxFDASBgNVBAMTC0phc29uIFlvY3VtMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArv+D+7G29A/HX3hxxl8DHpYX2wSThxnS1nAI2RTw8rbHLJuJp6Kr/JeZMyFdtGeCUTB80MxMDfBGlaSCaj+ncFXqcrdaZmkOTwCJDq5XAfH311OYF3XXUurYwysOKcpZYsOcK9TFvcNPGPh/BkAcq2uRzCRgWjsSbJs3bYPYxVaK6sGL4SjPFJTktsFB98L4FCjOjiwMkxFWvM0Ycu348Pb1i6FzRWqSqDi2E/wC1UtR6j24TmHmDeEtpFU03H+Y+EQDd6DGG8T1aPB2AvEF0pfpcE7PJn9wxqcIY92MhIwxazu+gYB3zuPeSWlH2hP99/6VJWvfZm9+KcPGrtGZSQIDAQABozQwMjAMBgNVHRMBAf8EAjAAMCIGA1UdJQEB/wQYMBYGCCsGAQUFBwMDBgorBgEEAYI3VAMBMA0GCSqGSIb3DQEBCwUAA4IBAQBwRpr/P30Xzqvzg1jdLDEnYWbmIPEpI1XsEDaGwhiZcokAlHSrejhx+mG1pedkS3J1hbZPCPDA9Ua+mZbIQehfPEsNFLdPncuEux+Axe4VEifu7QjI0YetL6asOSzKkjYt4z0q29rSnjpjqX22w9dtFLj/cf73GBUegtxBQdOWcMdZn/GOos0cg8767hoHClXB01LmSvUKz9WhjiA6pMrgqU7yiBYpquo6Eo07xeLro3JvzAhmPaEssnSvdti6xhxG6LIGyZ8azmjZohufudEaIM/6U/jPKRUoIQMyFCa5C5Ry7HN5w9GImqtZQra4KROnpa9mh6CL4mKGRkTMlJHn</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
