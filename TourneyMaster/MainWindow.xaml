@@ -4,9 +4,58 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TourneyMaster"
-        mc:Ignorable="d"
-        Title="MainWindow5" Height="450" Width="800">
+        mc:Ignorable="d" FontSize="20" FontFamily="Segoe UI Light"
+        Title="Tourney Master ALPHA" Height="700" Width="1200">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="20" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="20" />
+        </Grid.RowDefinitions>
 
+        
+        <!-- Column 1 -->
+
+        <!-- Title -->
+        <TextBlock Grid.Column="1" Grid.Row="1" Margin="0,0,20,20" 
+                   x:Name="Title" Text="Tourney Master" FontSize="40" />
+    
+        <!-- Tournament settings -->
+        <Grid Grid.Column="1" Grid.Row="2" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="auto" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+
+            <!-- Date -->
+            <TextBlock Margin="0,0,10,10"
+                       Text="Tournament date:" />
+
+            <TextBox Grid.Column="1" Margin="0,0,20,10"
+                 x:Name="TournamentDate" TextChanged="TournamentDate_TextChanged" PreviewKeyDown="TournamentDate_PreviewKeyDown" />
+            <TextBlock Grid.Column="1" Margin="5,0,25,10" HorizontalAlignment="Left" VerticalAlignment="Center"
+                   Text="(MM/DD/YYYY)" FontSize="15" FontWeight="ExtraLight" Opacity="0.3"
+                   x:Name="TournamentDateHint" IsHitTestVisible="False"/>
+            
+            
+        </Grid>
+        
     </Grid>
 </Window>

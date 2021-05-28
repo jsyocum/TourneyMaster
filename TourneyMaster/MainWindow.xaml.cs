@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using static TourneyMaster.CSharpHelper;
+using static TourneyMaster.GenericXAMLHelper;
 
 namespace TourneyMaster
 {
@@ -23,6 +25,21 @@ namespace TourneyMaster
         public MainWindow()
         {
             InitializeComponent();
+
+
+        }
+
+
+        ///////////////////TournamentDate stuff///////////////////
+
+        private void TournamentDate_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            HideSearchText(TournamentDate, TournamentDateHint);
+        }
+
+        private void TournamentDate_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            EnterDate(TournamentDate, e);
         }
     }
 }
