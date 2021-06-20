@@ -13,7 +13,11 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using static TourneyMaster.CSharpHelper;
-using static TourneyMaster.GenericXAMLHelper;
+using static TourneyMaster.XAMLHelper;
+using static TourneyMaster.LocalDebug;
+using static JSYHelpers.CSharp;
+using static JSYHelpers.XAML;
+using static DebugConsole.MainWindow;
 
 namespace TourneyMaster
 {
@@ -22,24 +26,30 @@ namespace TourneyMaster
     /// </summary>
     public partial class MainWindow : Window
     {
+        //public static string testTitle = Title.Text;
+
         public MainWindow()
         {
             InitializeComponent();
-
-
         }
 
 
         ///////////////////TournamentDate stuff///////////////////
-
-        private void TournamentDate_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            HideSearchText(TournamentDate, TournamentDateHint);
-        }
-
         private void TournamentDate_PreviewKeyDown(object sender, KeyEventArgs e)
         {
-            EnterDate(TournamentDate, e);
+            RestrictToNumbers(e);
+        }
+
+        private async void ConsoleButton_Click(object sender, RoutedEventArgs e)
+        {
+            var debugConsole = new DebugConsole.MainWindow();
+            debugConsole.Show();
+            await MonitorConsole();
+        }
+
+        private void debugTestButton_Click(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }

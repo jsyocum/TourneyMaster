@@ -7,11 +7,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="GenericCSharpHelper.cs" />
+    <Compile Remove="GenericXAMLHelper.cs" />
     <Compile Remove="XAMLHelperFromArchHelper.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="WindowsAPICodePack" Version="1.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\DebugConsole\DebugConsole\DebugConsole.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="JSYHelpers">
+      <HintPath>..\..\JSYHelpers\JSYHelpers\bin\Debug\net5.0-windows\JSYHelpers.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

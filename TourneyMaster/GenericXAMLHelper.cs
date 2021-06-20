@@ -8,11 +8,11 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using static TourneyMaster.MainWindow;
-using static TourneyMaster.CSharpHelper;
+using static TourneyMaster.GenericCSharpHelper;
 
 namespace TourneyMaster
 {
-    class GenericXAMLHelper
+    public class GenericXAMLHelper
     {
         /// <summary>
         /// Hides a TextBlock's text when a TextBox has text in it.

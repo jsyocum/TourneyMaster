@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31229.75
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TourneyMaster", "TourneyMaster\TourneyMaster.csproj", "{8A58E31B-7A39-4076-97E8-6FD6CC82857C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TourneyMaster", "TourneyMaster\TourneyMaster.csproj", "{8A58E31B-7A39-4076-97E8-6FD6CC82857C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JSYHelpers", "..\JSYHelpers\JSYHelpers\JSYHelpers.csproj", "{6062CCCA-86C1-4BFD-A74E-09D1F225F2DE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DebugConsole", "..\DebugConsole\DebugConsole\DebugConsole.csproj", "{C7F6CBEA-BC2B-4095-BA55-422171A045FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{8A58E31B-7A39-4076-97E8-6FD6CC82857C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A58E31B-7A39-4076-97E8-6FD6CC82857C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A58E31B-7A39-4076-97E8-6FD6CC82857C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6062CCCA-86C1-4BFD-A74E-09D1F225F2DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6062CCCA-86C1-4BFD-A74E-09D1F225F2DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6062CCCA-86C1-4BFD-A74E-09D1F225F2DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6062CCCA-86C1-4BFD-A74E-09D1F225F2DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7F6CBEA-BC2B-4095-BA55-422171A045FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7F6CBEA-BC2B-4095-BA55-422171A045FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7F6CBEA-BC2B-4095-BA55-422171A045FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7F6CBEA-BC2B-4095-BA55-422171A045FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

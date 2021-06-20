@@ -20,6 +20,9 @@
             <RowDefinition Height="auto" />
             <RowDefinition Height="auto" />
             <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
             <RowDefinition Height="*" />
             <RowDefinition Height="20" />
         </Grid.RowDefinitions>
@@ -29,7 +32,7 @@
 
         <!-- Title -->
         <TextBlock Grid.Column="1" Grid.Row="1" Margin="0,0,20,20" 
-                   x:Name="Title" Text="Tourney Master" FontSize="40" />
+                   x:Name="Title" Text="Tourney Master" FontSize="43" />
     
         <!-- Tournament settings -->
         <Grid Grid.Column="1" Grid.Row="2" >
@@ -48,14 +51,16 @@
             <TextBlock Margin="0,0,10,10"
                        Text="Tournament date:" />
 
-            <TextBox Grid.Column="1" Margin="0,0,20,10"
-                 x:Name="TournamentDate" TextChanged="TournamentDate_TextChanged" PreviewKeyDown="TournamentDate_PreviewKeyDown" />
-            <TextBlock Grid.Column="1" Margin="5,0,25,10" HorizontalAlignment="Left" VerticalAlignment="Center"
-                   Text="(MM/DD/YYYY)" FontSize="15" FontWeight="ExtraLight" Opacity="0.3"
-                   x:Name="TournamentDateHint" IsHitTestVisible="False"/>
-            
-            
+            <DatePicker Grid.Column="1" Margin="0,0,20,10"
+                        x:Name="TournamentDate" FontSize="15" PreviewKeyDown="TournamentDate_PreviewKeyDown"/>
+
         </Grid>
-        
+
+        <Button Grid.Column="1" Grid.Row="3" Margin="0,0,20,10"
+                    x:Name="ConsoleButton" Content="Open Debug Console" Click="ConsoleButton_Click"/>
+
+        <Button Grid.Column="1" Grid.Row="4" Margin="0,0,20,10"
+                    x:Name="debugTestButton" Content="Debug test" Click="debugTestButton_Click" />
+
     </Grid>
 </Window>

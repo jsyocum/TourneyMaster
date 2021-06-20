@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TourneyMaster
 {
-    class CSharpHelper
+    class XAMLHelper
     {
     }
 }
